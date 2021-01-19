@@ -1,0 +1,73 @@
+.dailyWeather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e213a;
+  padding: 18px 22px;
+  justify-content: space-between;
+  min-height: 177px;
+  min-width: 120px;
+  margin: 10px;
+}
+
+.dailyWeather:first-child {
+  margin-left: 0px !important;
+}
+
+.dailyWeather:last-child {
+  margin-right: 0px !important;
+}
+
+.dailyWeather > h3 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #e7e7eb;
+}
+
+.dailyWeather__picture {
+  display: flex;
+  justify-content: center;
+}
+
+.dailyWeather__picture > img {
+  width: 56.44px;
+  height: 62px;
+}
+
+.dailyWeather__temp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.temp__detail {
+  display: flex;
+  align-items: center;
+}
+
+.temp__detail > span {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.temp__detail > h3,
+.temp__detail:first-child > span {
+  color: #e7e7eb;
+}
+
+.temp__detail > h4,
+.temp__detail:last-child > span {
+  color: #a09fb1;
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Prata&display=swap');
+
+.app {
+  max-width: 1440px;
+  display: flex;
+  background: #100e1d;
+}
+
+.app__left {
+  flex: 0.3;
+  background-color: #1e213a;
+}
+
+.app__main {
+  flex: 0.7;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 52px;
+}
+
+.main__tempIndicator {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main__weatherInfo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+  padding-bottom: 80px;
+  justify-content: space-between;
+}
+
+.weather__weeks {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.weather__today {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.weather__today > h1 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #e7e7eb;
+}
+
+.today__detail {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  justify-content: space-between;
+}
+
+.main__footer {
+  display: flex;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a9a9a9;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-top: auto;
+}
+
+@media (max-width: 1124px) {
+  .app__main {
+    flex: 0.6;
+    padding: 52px 21px 34px 21px;
+  }
+  .weather__weeks {
+    grid-template-columns: repeat(3, calc(100% / 3));
+  }
+}
+
+@media (max-width: 635px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .app__left {
+    flex: 1;
+    padding: 18px 11px 105px 11px;
+  }
+
+  .app__main {
+    flex: 1;
+    padding: 52px 21px 34px 21px;
+  }
+
+  .main__tempIndicator {
+    display: none;
+  }
+
+  .weather__weeks {
+    display: grid;
+    grid-template-columns: repeat(2, calc(100% / 2));
+    justify-items: center;
+  }
+
+  .today__detail {
+    grid-template-columns: repeat(1, 100%);
+    padding: 15px;
+    grid-gap: 15px;
+  }
+
+  .main__footer {
+    font-size: 10px;
+  }
+}

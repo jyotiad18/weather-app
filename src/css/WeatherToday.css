@@ -1,0 +1,59 @@
+.weatherToday {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e213a;
+  margin-bottom: 10px;
+  padding: 35px;
+  color: #e7e7eb;
+  font-family: Raleway;
+  font-style: normal;
+}
+
+.weatherToday > h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.weatherToday > div {
+  margin-top: 31px;
+}
+
+.weatherToday__record {
+  display: flex;
+  align-items: center;
+}
+
+.weatherToday__record > h3 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #e7e7eb;
+  margin-right: 5px;
+}
+
+.weather__progress {
+  display: flex;
+  height: 10px;
+  background: #e7e7eb;
+  border-radius: 80px;
+  align-items: center;
+  width: 100%;
+}
+
+.actual__humidity {
+  height: 100%;
+  background: #FFEC65;
+   border-radius: 80px;
+}
+
+@media (max-width: 635px) {
+  .weatherToday {
+    justify-content: center;
+    width: 100%;
+  }
+}
